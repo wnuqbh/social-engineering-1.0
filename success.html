@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Uniten Info</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      background-color: #f0f0f0;
+    }
+
+    /* TOP HEADER */
+    .header {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(to bottom, #8B0000, #cc0000);
+      padding: 6px 10px;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tropical_Forest.jpg/1200px-Tropical_Forest.jpg');
+      background-size: cover;
+      background-position: center top;
+      height: 70px;
+    }
+
+    .header-logo {
+      background: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    .header-logo img {
+      width: 55px;
+      height: 55px;
+      object-fit: contain;
+    }
+
+    .header-title {
+      color: #FFD700;
+      font-size: 26px;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .header-version {
+      margin-left: auto;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px #000;
+      margin-right: 20px;
+    }
+
+    /* LAYOUT */
+    .layout {
+      display: flex;
+      min-height: calc(100vh - 70px);
+    }
+
+    /* LEFT SIDEBAR */
+    .sidebar {
+      width: 160px;
+      background-color: #f4a9a8;
+      padding: 8px 10px;
+      flex-shrink: 0;
+      border-right: 1px solid #ccc;
+    }
+
+    .sidebar .student-id {
+      font-size: 12px;
+      font-weight: bold;
+      color: #000080;
+      margin-bottom: 6px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #000080;
+      text-decoration: underline;
+      font-size: 12px;
+      margin-bottom: 2px;
+      cursor: pointer;
+    }
+
+    .sidebar a:hover {
+      color: #cc0000;
+    }
+
+    /* MAIN CONTENT */
+    .content {
+      flex: 1;
+      background-color: #f4a9a8;
+      padding: 20px 24px;
+    }
+
+    .content h3 {
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    .content > p {
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .content a {
+      color: #000080;
+    }
+
+    /* NOTICE BOX */
+    .notice-box {
+      border: 2px solid #333;
+      padding: 20px 24px;
+      margin-top: 16px;
+      background-color: #f4a9a8;
+    }
+
+    .notice-box h2 {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 16px;
+    }
+
+    .notice-box p {
+      margin-bottom: 12px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .notice-box ol {
+      margin-left: 30px;
+      margin-bottom: 14px;
+    }
+
+    .notice-box ol li {
+      margin-bottom: 6px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .notice-box ul {
+      margin-left: 24px;
+      margin-bottom: 14px;
+    }
+
+    .notice-box ul li {
+      margin-bottom: 10px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    /* FOOTER WARNING */
+    .footer-warning {
+      color: red;
+      font-size: 12px;
+      text-align: center;
+      padding: 10px;
+      background-color: #f4a9a8;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Universiti_Tenaga_Nasional_logo.svg/200px-Universiti_Tenaga_Nasional_logo.svg.png" alt="UNITEN">
+    </div>
+    <div class="header-title">Uniten Info</div>
+    <div class="header-version">Versi: 1.0.612</div>
+  </div>
+
+  <!-- LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="student-id">STUDENT\cs01083392</div>
+      <a href="#">Academic Regulations</a>
+      <a href="#">Advising</a>
+      <a href="#">Advisor Meeting</a>
+      <a href="#">Apply Apartment</a>
+      <a href="#">Biodata</a>
+      <a href="#">Cancelled Classes</a>
+      <a href="#">Class Notices</a>
+      <a href="#">Current Classes</a>
+      <a href="#">Exam</a>
+      <a href="#">ITS</a>
+      <a href="#">Ledger Balance</a>
+      <a href="#">Next of kin</a>
+      <a href="#">Parking</a>
+      <a href="#">PDPA Consent</a>
+      <a href="#">Project Title</a>
+      <a href="#">Results</a>
+      <a href="#">Tickets</a>
+      <a href="#">Scorun</a>
+      <a href="#">Study Plan</a>
+      <a href="#">Study Plan Info</a>
+      <a href="#">Subject Catalog</a>
+      <a href="#">Surveys</a>
+      <a href="#">Time Table</a>
+      <a href="#">Withdraw Subject</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+      <h3>Welcome to Uniten Info</h3>
+      <p>Please click on the menu items on the left.</p>
+      <p>If you would like to send feedback to UNITEN, please use <a href="#">i-Recommend</a></p>
+
+      <div class="notice-box">
+        <h2>Timetable Dropped for Semester 2, 2025/2026</h2>
+
+        <p>Dear Students,</p>
+        <p>Please be informed that if your timetable for the current semester has been <strong>dropped</strong>, it is due to one or more of the following reasons:</p>
+
+        <ol>
+          <li>Outstanding fees / incomplete payment from previous semester.</li>
+          <li>Outstanding fees / incomplete payment of proforma invoice (PIXXXX).</li>
+          <li>Failure to comply with academic requirements (GPA below 2.00 for PTPTN sponsor).</li>
+          <li>Sponsorship status was not updated or confirmed for the current semester.</li>
+          <li>Other related compliance issues.</li>
+        </ol>
+
+        <p>To avoid further inconvenience, you are advised to <strong>take immediate action</strong> by:</p>
+
+        <ul>
+          <li><strong>Reviewing your student's ledger and make necessary payment.</strong> If you have already made the payment, please contact the Finance Helpdesk at <strong>financehelpdesk@uniten.edu.my</strong>. Once verified, we will escalate the case to the Academic Registrar's Office to re-register your timetable.</li>
+          <li>Liaising with the relevant department (Finance) for clarification and necessary rectification.</li>
+        </ul>
+
+        <p>Please be reminded that failure to resolve this matter within the stipulated period may affect your academic progress for the semester. Should you require further assistance, please do not hesitate to contact the relevant office.</p>
+
+        <p>Thank you for your attention and cooperation.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER WARNING -->
+  <div class="footer-warning">
+    You have outstanding debt and are not allowed to view your online tickets or examination results. For further information, please contact the Finance Helpdesk.
+  </div>
+
+</body>
+</html>
